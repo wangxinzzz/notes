@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>数据结构 · GitBook</title>
+        <title>二.线性表 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="基本概念.html" />
+    <link rel="next" href="栈队列.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="基本概念.html" />
     
 
     </head>
@@ -106,7 +106,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="数据结构.html">
+        <li class="chapter " data-level="1.2" data-path="数据结构.html">
             
                 <a href="数据结构.html">
             
@@ -133,7 +133,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="线性表.html">
+        <li class="chapter active" data-level="1.2.2" data-path="线性表.html">
             
                 <a href="线性表.html">
             
@@ -220,7 +220,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >数据结构</a>
+        <a href=".." >二.线性表</a>
     </h1>
 </div>
 
@@ -235,14 +235,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
-<ol>
-<li><a href="&#x57FA;&#x672C;&#x6982;&#x5FF5;.html">&#x57FA;&#x672C;&#x6982;&#x5FF5;</a></li>
-<li><a href="&#x7EBF;&#x6027;&#x8868;.html">&#x7EBF;&#x6027;&#x8868;</a></li>
-<li><a href="&#x6808;&#x961F;&#x5217;.html">&#x6808;/&#x961F;&#x5217;</a></li>
-<li><a href="&#x5B57;&#x7B26;&#x4E32;.html">&#x5B57;&#x7B26;&#x4E32;</a></li>
-<li><a href="&#x6811;.html">&#x6811;</a></li>
-</ol>
+                                <h4 id="&#x4E8C;&#x7EBF;&#x6027;&#x8868;">&#x4E8C;.&#x7EBF;&#x6027;&#x8868;</h4>
+<p>&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x6709;&#x9650;&#x5E8F;&#x5217;</p>
+<h5 id="&#x987A;&#x5E8F;&#x8868;">&#x987A;&#x5E8F;&#x8868;</h5>
+<p>&#x6570;&#x7EC4;&#x5B9E;&#x73B0;&#xFF0C;&#x968F;&#x673A;&#x5B58;&#x53D6;&#x7ED3;&#x6784;</p>
+<ul>
+<li>&#x4F18;&#x70B9;
+1.&#x4E0D;&#x9700;&#x8981;&#x4E3A;&#x5143;&#x7D20;&#x4E4B;&#x524D;&#x7684;&#x903B;&#x8F91;&#x5173;&#x7CFB;&#xFF08;&#x987A;&#x5E8F;&#xFF09;&#x589E;&#x52A0;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;
+2.&#x5FEB;&#x901F;&#x7684;&#x5B58;&#x53D6;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</li>
+<li>&#x7F3A;&#x70B9;
+1.&#x63D2;&#x5165;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x79FB;&#x52A8;&#x5927;&#x91CF;&#x5143;&#x7D20;
+2.&#x7EBF;&#x6027;&#x8868;&#x957F;&#x5EA6;&#x53D8;&#x5316;&#x5927;&#xFF0C;&#x4E0D;&#x786E;&#x5B9A;&#x65F6;&#xFF0C;&#x96BE;&#x4EE5;&#x786E;&#x5B9A;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x5BB9;&#x91CF;
+3.&#x9020;&#x6210;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x788E;&#x7247;</li>
+</ul>
+<h5 id="&#x52A8;&#x6001;&#x94FE;&#x8868;">&#x52A8;&#x6001;&#x94FE;&#x8868;</h5>
+<ul>
+<li>&#x4F18;&#x70B9; 
+1.&#x5B58;&#x50A8;&#x5355;&#x5143;&#x53EF;&#x4EE5;&#x4E0D;&#x8FDE;&#x7EED;
+2.&#x77E5;&#x9053;&#x67D0;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x6307;&#x9488;&#x540E;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(1)
+3.&#x7A7A;&#x95F4;&#x4E0D;&#x6D6A;&#x8D39;</li>
+</ul>
+<h5 id="&#x9759;&#x6001;&#x94FE;&#x8868;">&#x9759;&#x6001;&#x94FE;&#x8868;</h5>
+<p>&#x4E3A;&#x4E86;&#x7ED9;&#x6CA1;&#x6709;&#x6307;&#x9488;&#x7684;&#x8BED;&#x8A00;&#x4EE5;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x94FE;&#x8868;&#x3002;&#x7F3A;&#x70B9;&#xFF0C;&#x5931;&#x53BB;&#x4E86;&#x987A;&#x5E8F;&#x968F;&#x673A;&#x5B58;&#x53D6;&#x7684;&#x7279;&#x6027;&#x3002;&#x6709;&#x70B9;&#xFF0C;&#x987A;&#x5E8F;&#x7ED3;&#x6784;&#x63D2;&#x5165;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x964D;&#x4F4E;</p>
+<h5 id="&#x5FAA;&#x73AF;&#x94FE;&#x8868;">&#x5FAA;&#x73AF;&#x94FE;&#x8868;</h5>
+<p>&#x89E3;&#x51B3;&#x5355;&#x94FE;&#x8868;&#x65E0;&#x6CD5;&#x4ECE;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x8BBF;&#x95EE;&#x6240;&#x6709;&#x5143;&#x7D20;</p>
+<h5 id="&#x53CC;&#x5411;&#x94FE;&#x8868;">&#x53CC;&#x5411;&#x94FE;&#x8868;</h5>
+<p>&#x6BCF;&#x4E2A;&#x5305;&#x542B;&#x524D;&#x540E;&#x8282;&#x70B9;</p>
 
                                 
                                 </section>
@@ -270,12 +288,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="基本概念.html" class="navigation navigation-prev " aria-label="Previous page: 一.基本概念">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="基本概念.html" class="navigation navigation-next " aria-label="Next page: 一.基本概念">
+                <a href="栈队列.html" class="navigation navigation-next " aria-label="Next page: 三.栈/队列">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -286,7 +304,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据结构","level":"1.2","depth":1,"next":{"title":"一.基本概念","level":"1.2.1","depth":2,"path":"数据结构与算法/基本概念.md","ref":"数据结构与算法/基本概念.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters","livereload"],"pluginsConfig":{"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据结构与算法/数据结构.md","mtime":"2020-06-14T15:51:12.734Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T15:51:43.042Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"二.线性表","level":"1.2.2","depth":2,"next":{"title":"三.栈/队列","level":"1.2.3","depth":2,"path":"数据结构与算法/栈队列.md","ref":"数据结构与算法/栈队列.md","articles":[]},"previous":{"title":"一.基本概念","level":"1.2.1","depth":2,"path":"数据结构与算法/基本概念.md","ref":"数据结构与算法/基本概念.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters","livereload"],"pluginsConfig":{"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据结构与算法/线性表.md","mtime":"2020-06-14T15:51:12.736Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T15:51:43.042Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
